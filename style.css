@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: pratik;
+    src: url(/positions/TacOne-Regular.ttf);
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+
+.leftnav{
+    display: flex;
+    width: 40%;
+    height: 100% ;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+
+.leftnav a{
+    text-decoration: none;
+    color: black;
+    margin: 0 1vw;
+    font-size: 1.5vw;
+}
+
+.midnav{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.midnav h1{
+    font-family: pratik;
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.rightnav{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rightnav button{
+    margin: 0 1.7vw;
+    padding: .5vw 1vw;
+    border-radius: 50px;
+    border: none;
+    font-family: cursive;
+    font-size: 1vw;
+    background-color: black;
+    color: white;
+}
+
+.menu{
+    display: none;
+}
+
+@media (max-width: 425px) {
+    nav{
+        height: 80px;
+        /* background-color: #a8dadc; */
+    }
+
+    .leftnav{
+        display: none;
+    }
+
+    .midnav{
+        width: 70%;
+        height: 100%;
+        padding: 0 3vh;
+    }
+
+    .midnav h1{
+    font-size: 3vh;
+    }
+    
+    .rightnav{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightnav button{
+        font-size: 2vw;
+    }
+    .menu{
+        display: block;
+        width: 10%;
+        display: flex;
+        margin: 0 0 0 4vw;
+    }
+
+    .menu i{
+        font-size: 3.5vw;
+    }
+
+    .dropdown{
+        display: block;
+        position: absolute;
+        width: 30%;
+        height: fit-content;
+        /* background-color: #a8dadc; */
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: 70vw;
+    }
+
+    .dropdown a{
+        font-size: 1.5vh;
+        margin: 1vh 2vh;
+        font-family: cursive;
+    }
+}
